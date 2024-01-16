@@ -13,29 +13,29 @@ title: CDS Package Store
 <a href="https://github.com/secondluke242014/cds-package-store/wiki">Wiki</a>
 
 <ul id="news">
-  <li style="display:none" id="1">Newest script: nil</li>
-  <li style="display:none" id="2">Newest model: nil</li>
-  <li style="display:none" id="3">Newest library: nil</li>
+  <li style="display:none" id="l1">Newest script: nil</li>
+  <li style="display:none" id="l2">Newest model: nil</li>
+  <li style="display:none" id="l3">Newest library: nil</li>
 </ul>
 
 <script>
-  var news = document.getElementById("news")
-  var li1 = news.getElementById("1")
-  var li2 = news.getElementById("2")
-  var li3 = news.getElementById("3")
+  var news = document.getElementById("news");
+  var li1 = news.getElementById("l1");
+  var li2 = news.getElementById("l2");
+  var li3 = news.getElementById("l3");
   
   while (true) {
-    setTimeout(function()
-      li1.style.display = "block"
-    },3000)
+    setTimeout(function();
+      li1.style.display = "block";
+    },3000);
     setTimeout(function(){
-      li1.style.display = "none"
-      li2.style.display = "block"
-    },3000)
+      li1.style.display = "none";
+      li2.style.display = "block";
+    },3000);
     setTimeout(function(){
-      li2.style.display = "none"
-      li3.style.display = "block"
-    },3000)
-    li3.style.display = "none"
-  }
+      li2.style.display = "none";
+      li3.style.display = "block";
+    },3000);
+    li3.style.display = "none";
+  };
 </script>
