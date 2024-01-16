@@ -12,29 +12,10 @@ title: CDS Package Store
 <a href="libraries">Libraries</a>
 <a href="https://github.com/secondluke242014/cds-package-store/wiki">Wiki</a>
 
+<h2>News</h1>
+
 <ul id="news">
   <li style="display:none" id="l1">Newest script: nil</li>
   <li style="display:none" id="l2">Newest model: nil</li>
   <li style="display:none" id="l3">Newest library: nil</li>
 </ul>
-
-<script>
-  var li1 = document.querySelector('#l1');
-  var li2 = document.querySelector('#l2');
-  var li3 = document.querySelector('#l3');
-  
-  function newsloop() {
-    console.log('start');
-    li1.style.display = "list-item";
-    setTimeout(function(){},3000);
-    li1.style.display = "none";
-    li2.style.display = "list-item";
-    setTimeout(function(){},3000);
-    li2.style.display = "none";
-    li3.style.display = "list-item";
-    setTimeout(function(){},3000);
-    li3.style.display = "none";
-    console.log('end');
-    newsloop();
-  };
-</script>
