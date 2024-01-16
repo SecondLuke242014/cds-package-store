@@ -23,7 +23,7 @@ title: CDS Package Store
   var li2 = document.querySelector('#l2');
   var li3 = document.querySelector('#l3');
   
-  //function newsloop() {
+  function newsloop() {
     console.log('start');
     li1.style.display = "list-item";
     setTimeout(function(){},3000);
@@ -35,5 +35,6 @@ title: CDS Package Store
     setTimeout(function(){},3000);
     li3.style.display = "none";
     console.log('end');
-  //};
+    newsloop();
+  };
 </script>
