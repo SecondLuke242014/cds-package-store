@@ -20,7 +20,7 @@ title: CDS Package Store
 <marquee id="marquee"><p>Loading news...</p></marquee>
 
 <script>
-  import news from 'news.json' assert {type: json}
+  import news from '/news.json' assert {type: json}
   var marquee = document.getElementById("marquee")
 
   marquee.innerHTML = "<p>Newest script: "+news[1]+" Newest model: "+news[2]+" Newest library: "+news[3]+"</p>"
