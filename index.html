@@ -16,10 +16,11 @@ title: CDS Package Store
 
 <marquee>Loading news...</marquee>
 
+<script src="https://secondluke242014.github.io/CDSJavascript/js/enum.js"></script>
 <script>
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
+    if (this.readyState == 4 && this.status == CDSEnum.HTTPCodes.OK) {
       
     }
   }
