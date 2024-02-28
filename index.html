@@ -19,7 +19,7 @@ title: CDS Package Store
 <script>
   var xhr = new XMLHttpRequest()
   Notification.requestPermission((result) => {
-    const notify = new Notification("CDS Package Store",{body:"CDS Package store is a developer market.";img:'images/IMG_1090.png'})
+    const notify = new Notification("CDS Package Store",{body:"CDS Package store is a developer market.",img:'images/IMG_1090.png'})
   })
   xhr.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
