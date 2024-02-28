@@ -17,10 +17,11 @@ title: CDS Package Store
 <marquee id="news">Error loading news</marquee>
 
 <script>
-  var xhr = new XMLHttpRequest();
+  var xhr = new XMLHttpRequest()
   xhr.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       document.getElementById("news").innerHTML = xhr.responseText
     }
   }
+  xhr.open('GET','news.txt',true)
 </script>
