@@ -14,9 +14,13 @@ title: CDS Package Store
 <a href="models">Models</a>
 <a href="libraries">Libraries</a>
 
+<marquee>Loading news...</marquee>
+
 <script>
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function() {
-    
+    if (this.readyState == 4 && this.status == 200) {
+      
+    }
   }
 </script>
