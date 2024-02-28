@@ -14,14 +14,13 @@ title: CDS Package Store
 <a href="models">Models</a>
 <a href="libraries">Libraries</a>
 
-<marquee>Loading news...</marquee>
+<marquee id="news">Error loading news</marquee>
 
-<script src="https://secondluke242014.github.io/CDSJavascript/js/enum.js"></script>
 <script>
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == CDSEnum.HTTPCodes.OK) {
-      
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("news").innerHTML = xhr.responseText
     }
   }
 </script>
