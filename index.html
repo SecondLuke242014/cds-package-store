@@ -13,18 +13,3 @@ title: CDS Package Store
 <a href="scripts">Scripts</a>
 <a href="models">Models</a>
 <a href="libraries">Libraries</a>
-
-<marquee id="news">Error loading news</marquee>
-
-<script>
-  var xhr = new XMLHttpRequest()
-  Notification.requestPermission((result) => {
-    const notify = new Notification("CDS Package Store",{body:"CDS Package Store is a developer market.",icon:'images/IMG_1090.png'})
-  })
-  xhr.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("news").innerHTML = xhr.responseText
-    }
-  }
-  xhr.open('GET','news.txt',true)
-</script>
